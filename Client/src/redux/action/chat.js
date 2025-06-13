@@ -3,7 +3,7 @@ import { createAsyncThunk } from "@reduxjs/toolkit";
 export const getAllChat = createAsyncThunk("getChat", async () => {
   try {
     const token = localStorage.getItem("token");
-    const res = await fetch("https://chat-messanger-beta.vercel.app/api/chat", {
+    const res = await fetch("http://localhost:4000/api/chat", {
       method: "GET",
       headers: {
         "Content-Type": "application/json",
@@ -34,7 +34,7 @@ export const createGroupChat = createAsyncThunk(
         users: formData.members,
       };
       const res = await fetch(
-        "https://chat-messanger-beta.vercel.app/api/group",
+        "http://localhost:4000/api/group",
         {
           method: "POST",
           headers: {
@@ -64,7 +64,7 @@ export const updateGroupChat = createAsyncThunk(
       const token = localStorage.getItem("token");
 
       const res = await fetch(
-        "https://chat-messanger-beta.vercel.app/api/update",
+        "http://localhost:4000/api/update",
         {
           method: "POST",
           headers: {

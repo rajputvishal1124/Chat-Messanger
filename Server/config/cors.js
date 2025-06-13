@@ -1,14 +1,14 @@
-// const cors = require("cors");
+const cors = require("cors");
 
-// const corsOpts = {
-//   origin: "*",
+const corsOpts = {
+  origin: "*",
 
-//   methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
+  methods: ["GET", "POST", "PUT", "DELETE", "PATCH"],
 
-//   allowedHeaders: ["Content-Type", "authorization"],
-//   "Access-Control-Allow-Origin": "*",
+  allowedHeaders: ["Content-Type", "authorization"],
+  "Access-Control-Allow-Origin": "*",
 
-//   origin: "http://localhost:5174",
-// };
+  origin: "http://localhost:5173",
+};
 
-// module.exports = cors(corsOpts);
+module.exports = cors(corsOpts);

@@ -16,7 +16,7 @@ const DB =
 app.use(
   cors({
     "Access-Control-Allow-Origin": "*",
-    origin: ["https://chat-messanger-front.vercel.app","http://localhost:5174",],
+    origin: ["https://chat-messanger-front.vercel.app","http://localhost:5173",],
     methods: ["GET", "HEAD", "PUT", "PATCH", "POST", "DELETE"],
     allowedHeaders: "Content-Type,Authorization", // Specify the allowed headers
   })
